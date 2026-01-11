@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friendship Proposal</title>
+
+  <!-- link CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+
+  <!-- STEP 1 -->
+  <div class="step" id="step1">
+    <img src="cat.jpg" class="animal" alt="Cat">
+    <p>
+      Hmm… scanning 🤔<br>
+      Is this sakshi ma’am?
+    </p>
+    <button onclick="goToStep(2)">Next</button>
+  </div>
+
+  <!-- STEP 2 -->
+<div class="step hidden" id="step2">
+  <img src="pranay.jpg" class="profile" alt="Pranay">
+
+  <p>
+    Yes! Recognition complete ✅<br>
+    She is sakshi ma’am.
+  </p>
+
+  <h3>Reasons to be friends with Pranay</h3>
+  <ul>
+    <li>he's trustworthy</li>
+    <li>he's very submissive</li>
+    <li>he'll listen ur every yapping session</li>
+    <li>only good vibes</li>
+  </ul>
+
+  <button onclick="goToStep(3)">Next</button>
+</div>
+
+
+  <!-- STEP 3 -->
+  <div class="step hidden" id="step3">
+  <img src="cat-sad.jpg" class="animal" alt="Emotional cat">
+
+  <p class="answer-title">Your answer:</p>
+
+  <div class="answer-row">
+    <button onclick="goToStep(4)">Yes</button>
+    <span class="or-text">or</span>
+    <button onclick="goToStep(4)" class="secondary">Yes</button>
+  </div>
+
+  <p class="joke">
+    sorry there's no other choice you have to be friend with me😭
+  </p>
+</div>
+
+
+  <!-- STEP 4 -->
+  <div class="step hidden" id="step4">
+  <img src="cat-happy.jpg" class="animal" alt="Happy cat">
+
+  <p>
+    Thank you 😊<br><br>
+    wishing you may get to eat your favorite dish today 🍽️
+  </p>
+</div>
+
+</div>
+
+<!-- link JS -->
+<script src="script.js"></script>
+</body>
+</html>
